@@ -1,0 +1,164 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2) format('woff2');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background: #FAFAFA;
+}
+
+.container {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+}
+
+
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .texts {
+    text-align: center;
+    width: 50%;
+
+}
+
+header.header-text {
+    font-weight: 200px;
+}
+
+.powered {
+    text-align: center;
+    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+    font-size: 2em;
+
+}
+
+header>p {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: min(392px, 100%);
+    padding: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 1px 8px 20px -6px hsl(229deg 6% 66%);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.icons {
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+
+}
+
+.cyan {
+    border-top: 4px solid hsl(180, 62%, 55%);
+
+}
+
+.red {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.orange {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.blue {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.column{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.title {
+    color: #575867;
+    font-weight: lighter;
+    margin-top: 2rem;
+
+}
+
+.name-title {
+    color: #575867;
+}
+
+.title-text-desc {
+    margin-inline: 5rem;
+    margin-right: 30px;
+    margin-top: .5rem;
+    color: #a7a7a9;
+    opacity: .9;
+    margin-bottom: 2rem;
+}
+
+p.text-desc {
+    margin-top: .5rem;
+    color: #a7a7a9;
+    opacity: .9;
+    font-size: 14px;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title,
+    .powered {
+        font-size: 19px;
+    }
+
+    header .texts {
+        text-align: center;
+        font-size: 13px;
+    }
+    .box{
+        margin-bottom:2rem;
+
+    }
+
+    .title-text-desc {
+        margin-inline: auto;
+        margin-top: .5rem;
+        color: #a7a7a9;
+        opacity: .9;
+        margin-bottom: 2rem;
+    }
+
+
+
+}
